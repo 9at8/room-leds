@@ -1,0 +1,12 @@
+FROM node:11.6.0
+
+# Set current directory
+WORKDIR /app
+
+# Cache packages
+COPY package.json /tmp/app/package.json
+COPY yarn.lock /tmp/app/yarn.lock
+RUN cd /tmp/app && yarn
+
+# Copy packages from /tmp/app and start
+CMD cp -r /tmp/app/node_modules /app && yarn app:start

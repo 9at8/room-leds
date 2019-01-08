@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "prisma.vscode-graphql",
+    "esbenp.prettier-vscode",
+    "shinnn.stylelint",
+    "eg2.tslint"
+  ]
+}

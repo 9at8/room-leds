@@ -1,6 +1,4 @@
-# If you're adding stuff to this file, it probably belongs in .dockerignore as well.
-# Copy it there as well! 🙌
-
+# ---------- GIT IGNORE ----------
 # Logs
 logs
 *.log
@@ -65,3 +63,20 @@ build/
 
 # Local database files
 db/
+
+# ----------- git ignore ends here ------------
+
+# Git files are useless inside the container
+.git
+.gitignore
+
+# Docker files are useless inside the container
+.dockerignore
+Dockerfile*
+docker-compose*
+
+# Readme does not affect builds
+README.md
+
+# VSCode config is useless inside the container
+.vscode
